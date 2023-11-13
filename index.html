@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </link>
+    <script src="https://kit.fontawesome.com/7ffad00efd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid p-4">
+        <div class="Container border rounded">
+            <div class="bg-light p-4">
+                <h2>Payment form example</h2>
+            </div>
+            <div class="alert alert-danger m-4" role="alert">
+                Some fields are missing!
+            </div>
+            <form>
+                <div class="row m-3">
+                    <div class="col-5">
+                        <label for="exampleInputCard" class="form-label fw-bold">#Card</label>
+                        <input type="text" class="form-control" id="exampleInputCard" placeholder="XXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleInputCVC" class="form-label fw-bold">#CVC</label>
+                        <input type="text" class="form-control" id="exampleInputCVC" placeholder="0000">
+                    </div>
+                    <div class="col-4">
+                        <label for="exampleInputAmaount" class="form-label fw-bold">Amount</label>
+                        <div class="d-flex">
+                            <span><strong>$</strong></span>
+                            <input type="text" class="form-control" id="exampleInputAmaount" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-6">
+                        <label for="exampleInputFirstName" class="form-label fw-bold">First name</label>
+                        <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="">
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputLastName" class="form-label fw-bold">Last Name</label>
+                        <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-6">
+                        <label for="exampleInputCity" class="form-label fw-bold">City</label>
+                        <input type="text" class="form-control" id="exampleInputCity" aria-describedby="">
+                    </div>
+                    <div class="col-3">
+                        <label for="" class="form-label fw-bold">State</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pick a state</option>
+                            <option value="1">Arizona</option>
+                            <option value="2">California</option>
+                            <option value="3">Florida</option>
+                            <option value="4">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleInputPostalCode" class="form-label fw-bold">Postal Code</label>
+                        <input type="text" class="form-control" id="exampleInputPostalCode"
+                            aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <label for="" class="form-label fw-bold">We accept:</label>
+                    <div class="col-4">
+                        <div class="Container border rounded bg-light p-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option">
+                                <label class="form-check-label" for="inlineCheckbox1"><i
+                                        class="fa-brands fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" name="option">
+                                <label class="form-check-label" for="inlineCheckbox2"><i
+                                        class="fa-brands fa-cc-visa"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                                <label class="form-check-label" for="inlineCheckbox3"><i
+                                        class="fa-brands fa-cc-amex"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox4" name="option">
+                                <label class="form-check-label" for="inlineCheckbox4"><i
+                                        class="fa-brands fa-cc-paypal"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col 2"></div>
+                    <div class="col-6">
+                        <label for="exampleInputPostalCode" class="form-label fw-bold">Message</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <p><small>Add any notes here.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end gap-2 bg-light p-3">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary">Send</button>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
